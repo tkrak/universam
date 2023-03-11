@@ -9,8 +9,8 @@ if (isGithubActions) {
   // trim off `<owner>/`
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
-  assetPrefix = `/universam/`
-  basePath = `/universam`
+  assetPrefix = '/universam/';
+  basePath = '/universam';
 }
 
 /** @type {import('next').NextConfig} */
