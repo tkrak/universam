@@ -44,7 +44,7 @@ export default function Index() {
     return (
         <main className={`${styles.main} ${roboto.className}`}>
             <header className={`${styles.header} ${scrollY > 96 ? styles.headerFilled : ''}`}>
-                <div className={styles.logo}>Universam</div>
+                <Link href="/" className={styles.logo}>Universam</Link>
                 <Navigation items={navItems}/>
             </header>
             <section className={styles.videoWrapper}>
