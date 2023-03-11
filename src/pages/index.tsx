@@ -17,7 +17,7 @@ const navItems = [
 const Navigation = ({items}:any) => {
     return (
         <nav>
-            {items.map((item:any) => (<Link href={item.link} scroll={false}><span key={item.link} className={robotoCondensed.className}>{item.caption}</span></Link>))}
+            {items.map((item:any) => (<Link key={item.link} href={item.link} scroll={false}><span className={robotoCondensed.className}>{item.caption}</span></Link>))}
         </nav>
     )
 }
@@ -39,7 +39,7 @@ export default function Index() {
         return () => {
             window.removeEventListener("scroll", onScroll);
         }
-    }, []);
+    }, [onScroll]);
 
     return (
         <main className={`${styles.main} ${roboto.className}`}>
