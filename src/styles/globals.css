@@ -1,0 +1,47 @@
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+
+@font-face {
+  font-family: "Mattone";
+  src: url("../assets/fonts/Mattone-150.woff2") format("woff2"),
+  url("../assets/fonts/Mattone-150.woff") format("woff"),
+  url("../assets/fonts/Mattone-150.otf") format("otf");
+}
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #292929;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
