@@ -111,11 +111,11 @@ export default function Index() {
                     <div>
                         <div className={styles.contactsLabelWrapper}>
                             <div className={styles.contactsLabel}><span className={robotoCondensed.className}>Телефон:</span></div>
-                            <div className={styles.contactsValue}>+380-66-387-87-29</div>
+                            <Link className={styles.contactsValue} href="tel:+380663878729">+380-66-387-87-29</Link>
                         </div>
                         <div className={styles.contactsLabelWrapper}>
                             <div className={styles.contactsLabel}><span className={robotoCondensed.className}>E-mail:</span></div>
-                            <div className={styles.contactsValue}>info@universam.bussiness</div>
+                            <Link className={styles.contactsValue} href="mailto:info@universam.bussiness">info@universam.bussiness</Link>
                         </div>
                     </div>
                     <div className={styles.form}>
