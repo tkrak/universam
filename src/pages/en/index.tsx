@@ -77,7 +77,7 @@ export default function Index() {
                     <li>Legal support of cooperation</li>
                 </ul>
                 <p className={roboto.className}>You can contact Universam for the purpose of cooperation using the feedback form:</p>
-                <a className={styles.buttonLink} href="/#contacts">CONTACT WITH US</a>
+                <Link className={styles.buttonLink} href="/#contacts">CONTACT WITH US</Link>
             </section>
             <section className={styles.sectionWrapper} id="training">
                 <h2 className={robotoCondensed.className}>Training</h2>
@@ -143,7 +143,7 @@ export default function Index() {
                         </div>
                         <div>
                             <div className={styles.field}>
-                                <a className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Contact us</a>
+                                <Link className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Contact us</Link>
                             </div>
                         </div>
                     </div>

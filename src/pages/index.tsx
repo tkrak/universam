@@ -77,7 +77,7 @@ export default function Index() {
                     <li>Юридичний супровід співпраці</li>
                 </ul>
                 <p className={roboto.className}>Ви можете зв’язатися з компанією Універсам з метою співпраці за формою зворотного зв’язку:</p>
-                <a className={styles.buttonLink} href="/#contacts">ЗВЯЗАТИСЯ З НАМИ</a>
+                <Link className={styles.buttonLink} href="/#contacts">ЗВЯЗАТИСЯ З НАМИ</Link>
             </section>
             <section className={styles.sectionWrapper} id="training">
                 <h2 className={robotoCondensed.className}>Навчання</h2>
@@ -143,7 +143,7 @@ export default function Index() {
                         </div>
                         <div>
                             <div className={styles.field}>
-                                <a className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Звʼязатися</a>
+                                <Link className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Звʼязатися</Link>
                             </div>
                         </div>
                     </div>
