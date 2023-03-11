@@ -20,8 +20,8 @@ export default function Index() {
             </header>
             <section className={styles.videoWrapper}>
                 <video className="" width="100%" autoPlay loop preload="auto" muted>
-                    <source media="(min-width:800px)" src="/universam/presentation1080.mp4"/>
-                    <source src="/universam/presentation720.mp4"/>
+                    <source media="(min-width:800px)" src="https://res.cloudinary.com/dfd1afdkw/video/upload/v1678568239/presentation1080_zaospn.mp4"/>
+                    <source src="https://res.cloudinary.com/dfd1afdkw/video/upload/v1678568349/presentation720_krjgcf.mp4"/>
                 </video>
                 <div className={styles.videoWrapper__mask}/>
 
