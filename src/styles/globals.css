@@ -33,6 +33,7 @@ body {
 
 body {
   background: #292929;
+  scroll-behavior:smooth;
 }
 
 a {

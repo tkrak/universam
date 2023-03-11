@@ -1,22 +1,5 @@
 .main {
-    &::before,
-    &::after{
-        content:'';
-        position:fixed;
-        top:0;
-        width: 1px;
-        height: 100vh;
-        background: white;
-        opacity: 0.2;
-        pointer-events: none;
-        z-index: 1;
-    }
-    &::before {
-        left: 33%;
-    }
-    &::after {
-        right: 33%;
-    }
+
 
     h2 {
         margin-top: 20px;
@@ -39,7 +22,25 @@
 
     section{
         width:100%;
-        height: 100vh;
+    }
+
+    ul {
+        margin-top: 20px;
+        padding-left: 15px;
+    }
+
+    li {
+        font-size: 1.1em;
+        color: #4db486;
+        & + li {
+            margin-top: 20px;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 1.3em;
+        margin-top: 20px;
     }
 }
 
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background 200ms;
 
     nav {
         a {
@@ -61,6 +63,11 @@
             text-align: right;
         }
     }
+}
+
+.headerFilled {
+    background: #292929;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .logo{
@@ -75,6 +82,25 @@
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
+
+    &::before,
+    &::after{
+        content:'';
+        position:fixed;
+        top:0;
+        width: 1px;
+        height: 100vh;
+        background: white;
+        opacity: 0.2;
+        pointer-events: none;
+        z-index: 10;
+    }
+    &::before {
+        left: 33%;
+    }
+    &::after {
+        right: 33%;
+    }
 }
 
 .motto {
@@ -98,13 +124,18 @@
 }
 
 .aboutWrapper {
-    padding: 20px 50px;
+    padding: 100px 50px;
     background: rgba(41, 41, 41, 0.8);
 }
 
 .sectionWrapper {
-    padding: 20px 50px;
+    padding: 100px 50px;
     background: rgb(41, 41, 41);
+
+    &.sectionWrapperContacts {
+        height: auto;
+        padding-bottom: 300px;
+    }
 }
 
 .videoWrapper {
@@ -133,9 +164,96 @@
     padding: 10px 50px;
     display: flex;
     background: #181818;
+
+    .copyright {
+        font-weight: 400;
+        font-size: 1em;
+        color: #396D54;
+    }
 }
 
-.copyright {
-    font-weight: 400;
-    color: #396D54;
+
+.contactsLabelWrapper{
+        //margin-top: 40px;
+
+    & + .contactsLabelWrapper {
+        margin-top: 42px;
+    }
+}
+
+.contactsLabel {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #6c6c6c;
+}
+
+.contactsValue {
+    color: #4db486;
+}
+
+.form {
+    position: absolute;
+    left: calc(33vw + 10px);
+    //margin-top: 40px;
+}
+
+.field {
+    margin-bottom: 20px;
+
+    & + .field {
+        margin-left: 10px;
+    }
+}
+
+.rowWrapper{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    //justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rowWrapper2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.input {
+    width: calc((33vw - 20px) / 2);
+    flex: 1;
+    margin-top: 10px;
+    display: block;
+    outline: 0;
+    border: 1px solid rgba(56, 56, 56, 0.53);
+    padding: 10px 20px;
+    background: rgba(56, 56, 56, 0.53);
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: white;
+
+    &.textarea{
+        width: 100%;
+    }
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background: #4db486;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buttonLink {
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #4db486;
+}
+
+.green {
+    color: #4db486;
 }
