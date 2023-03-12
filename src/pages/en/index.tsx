@@ -113,7 +113,7 @@ export default function Index() {
             </section>
             <section className={`${styles.sectionWrapper} ${styles.sectionWrapperContacts}`} id="contacts">
                 <h2 className={robotoCondensed.className}>Contacts</h2>
-                <div className={styles.rowWrapper}>
+                <div className={[styles.rowWrapper, styles.wrapper].join(' ')}>
                     <div>
                         <div className={styles.contactsLabelWrapper}>
                             <div className={styles.contactsLabel}><span className={robotoCondensed.className}>Phone:</span></div>
