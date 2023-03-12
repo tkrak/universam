@@ -44,7 +44,13 @@ export default function Index() {
     return (
         <main className={`${styles.main} ${roboto.className}`}>
             <header className={`${styles.header} ${scrollY > 96 ? styles.headerFilled : ''}`}>
-                <Link href="/" className={styles.logo}>Universam</Link>
+                <div className={styles.leftBlock}>
+                    <Link href="/" className={styles.logo}>Universam</Link>
+                    <div className={[styles.languageSwitch].join(' ')}>
+                        <Link href="/" className={[styles.languageItem, styles.languageItemActive].join(' ')}>UA</Link>
+                        <Link href="/en" className={[styles.languageItem].join(' ')}>EN</Link>
+                    </div>
+                </div>
                 <Navigation items={navItems}/>
             </header>
             <section className={styles.videoWrapper}>

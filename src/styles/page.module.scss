@@ -87,14 +87,14 @@
     &::before,
     &::after{
         content:'';
-        position:fixed;
+        position:absolute;
         top:0;
         width: 1px;
         height: 100vh;
         background: white;
         opacity: 0.2;
         pointer-events: none;
-        z-index: 10;
+        z-index: 1;
     }
     &::before {
         left: 33%;
@@ -254,5 +254,23 @@
 }
 
 .green {
+    color: #4db486;
+}
+
+.leftBlock{
+    display: flex;
+    align-items: center;
+}
+.languageSwitch{
+    margin-left: 5vw;
+}
+.languageItem{
+    color: white;
+
+    & + .languageItem {
+        margin-left: 20px;
+    }
+}
+.languageItemActive{
     color: #4db486;
 }
