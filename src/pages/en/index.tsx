@@ -121,7 +121,7 @@ export default function Index() {
                         </div>
                         <div className={styles.contactsLabelWrapper}>
                             <div className={styles.contactsLabel}><span className={robotoCondensed.className}>E-mail:</span></div>
-                            <Link className={styles.contactsValue} href="mailto:info@universam.bussiness">info@universam.bussiness</Link>
+                            <Link className={styles.contactsValue} href="mailto:info@universam.business">info@universam.business</Link>
                         </div>
                     </div>
                     <div className={styles.form}>
@@ -149,7 +149,7 @@ export default function Index() {
                         </div>
                         <div>
                             <div className={styles.field}>
-                                <Link className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Contact us</Link>
+                                <Link className={styles.button} href={`mailto:info@universam.business?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Contact us</Link>
                             </div>
                         </div>
                     </div>

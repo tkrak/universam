@@ -70,7 +70,7 @@ export default function Index() {
                 <p className={roboto.className}><span className={styles.green}>Компанія Універсам</span> – Українська компанія з більш ніж 20-ти річним досвідом роботи в сфері сільського господарства в Україні.</p>
                 <p className={roboto.className}>Ми займаємося широким спектром діяльності та надаємо різноманітні послуги <span className={styles.green}>в галузі сільського господарства, інжинірингу та консалтингу</span>.</p>
                 <p className={roboto.className}>Наша мета – розвиток та впровадження новітніх технологій у сферах нашої діяльності, економічне та професійне зростання нашої компанії, наших партнерів та клієнтів.</p>
-                <p className={roboto.className}><span className={styles.green}>Ми постійно зростаємо і шукаємо напрямки інвестування та розвитку</span>. Такі як архітектура, технології, імпортування та експортування сировини та обладнання.</p>
+                <p className={roboto.className}><span className={styles.green}>Ми постійно зростаємо і шукаємо напрямки інвестування та розвитку</span>. Такі як архітектура, технології, імпорт та експорт сировини та обладнання.</p>
             </section>
             <section className={styles.sectionWrapper} id="cooperation">
                 <h2 className={robotoCondensed.className}>Співпраця</h2>
@@ -121,7 +121,7 @@ export default function Index() {
                         </div>
                         <div className={styles.contactsLabelWrapper}>
                             <div className={styles.contactsLabel}><span className={robotoCondensed.className}>E-mail:</span></div>
-                            <Link className={styles.contactsValue} href="mailto:info@universam.bussiness">info@universam.bussiness</Link>
+                            <Link className={styles.contactsValue} href="mailto:info@universam.business">info@universam.business</Link>
                         </div>
                     </div>
                     <div className={styles.form}>
@@ -149,7 +149,7 @@ export default function Index() {
                         </div>
                         <div>
                             <div className={styles.field}>
-                                <Link className={styles.button} href={`mailto:info@universam.bussiness?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Звʼязатися</Link>
+                                <Link className={styles.button} href={`mailto:info@universam.business?body=Імʼя: ${name}%0D%0AКомпанія: ${company}%0D%0AЕл.пошта: ${email}%0D%0A%0D%0A${msg}`}>Звʼязатися</Link>
                             </div>
                         </div>
                     </div>

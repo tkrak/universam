@@ -56,6 +56,7 @@
     p {
         color: white;
         font-size: 1.3em;
+        line-height: 1.4;
         margin-top: 20px;
 
         @media(max-width:600px){
@@ -82,6 +83,7 @@
     }
 
     @media(max-width: 967px){
+        padding: 20px;
         flex-direction: column;
 
         nav{
